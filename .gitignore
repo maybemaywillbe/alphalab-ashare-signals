@@ -1,0 +1,46 @@
+# Never commit downloaded licensed provider price histories or user-specific evidence.
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+outputs/
+inputs/sina_snapshots/
+inputs/snapshots/
+inputs/*_raw.csv
+inputs/*_qfq.csv
+inputs/*.json
+inputs/*.meta.json
+*.log
+*.tmp
+.env
+.env.*
+!*.example
+# Do not commit files dropped into these folders without source/licensing review.
+private_data/
+local_evidence/
+
+# Local build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.swp
+*~
+
+# Never push generated download archives or hidden credentials
+*.zip
+*.tar.gz
+*.pem
+*.key
+*.p12
+*.pfx
+# Current listing snapshots are provider-derived candidate data, used locally.
+inputs/universe_candidates.csv
+# Only the tiny frozen selected-symbol list is intended for release.
+# Scratch publication builds and temporary report artifacts remain local.

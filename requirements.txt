@@ -1,0 +1,9 @@
+# Minimal offline analysis & tests. For editable install: pip install -e '.[dev]'
+numpy>=1.26,<3
+pandas>=2.2,<3
+scipy>=1.11,<2
+PyYAML>=6,<7
+tabulate>=0.9,<1
+pytest>=8,<10
+# Optional for rebuilding research charts: matplotlib>=3.8,<4
+# Optional for obtaining data online only: akshare>=1.14

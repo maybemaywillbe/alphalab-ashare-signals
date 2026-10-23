@@ -1,0 +1,24 @@
+{
+  "study_id": "Ashare_stratified_hash_20261023",
+  "status": "fresh_run_exploratory_not_investable",
+  "frozen_protocol_hash_sha256": "d7a03c7f3d034f333e1af2525ef3204bd1581ac6b0c85ea6ef0d743fbc6743f6",
+  "included_stock_count": 100,
+  "eligible_factor_month_rows": 266,
+  "factor_period_summary_rows": 6,
+  "period_names": [
+    "development",
+    "historical_evaluation_reused",
+    "new_historical_extension_not_prospective"
+  ],
+  "top_membership_mismatch_months": 65,
+  "historical_PIT_universe_verified": false,
+  "untouched_prospective_holdout": false,
+  "notable_limits": [
+    "Current-listed candidate pool still excludes companies delisted before candidate collection.",
+    "Stratification removes code-order concentration only, not survivorship or historical market representation.",
+    "2023-2025 already inspected; no untouched time-based OOS period.",
+    "Retrospective QFQ and price-only forward outcomes; not investable returns.",
+    "2026 extension is historical and may be incomplete; not prospective validation."
+  ],
+  "data_license": "Sina input histories intentionally excluded from public deliverables"
+}

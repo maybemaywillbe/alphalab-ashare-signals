@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alphalab-research"
+version = "1.0.0"
+description = "Exploratory A-share factor diagnostics on a constrained sample; not an executable strategy."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "AlphaLab Contributors"}]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "scipy>=1.11,<2",
+  "PyYAML>=6,<7",
+  "tabulate>=0.9,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+viz = ["matplotlib>=3.8,<4", "reportlab>=4,<5"]
+fetch = ["akshare>=1.14"]
+
+[tool.setuptools.packages.find]
+include = ["alphalab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

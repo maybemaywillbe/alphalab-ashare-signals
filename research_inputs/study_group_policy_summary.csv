@@ -1,0 +1,7 @@
+factor,study_period,eligible_factor_months,top_group_changed,bottom_group_changed
+momentum,development,82,16,18
+momentum,historical_evaluation_reused,36,5,4
+momentum,new_historical_extension_not_prospective,8,0,1
+reversal,development,96,42,44
+reversal,historical_evaluation_reused,36,1,9
+reversal,new_historical_extension_not_prospective,8,1,1

@@ -1,0 +1,50 @@
+{
+  "study_id": "Ashare_stratified_hash_20261023",
+  "protocol_status": "frozen_before_this_new_data_run_not_preregistered_before_old_exploration",
+  "selection_method": "stratified_SHA256_seeded_without_replacement",
+  "selection_seed": 20261023,
+  "target_names": 100,
+  "quota": {
+    "sh_main": 40,
+    "sz_main": 40,
+    "chinext": 15,
+    "star": 5
+  },
+  "candidate_source_sha256": "558a4790faf357af037fa421a477705cb91396996236e815956c8d54d1372589",
+  "selected_universe_sha256": "8403831219f923b413fccc46e0302e375f80695a7c51e879591927d6cd1cea13",
+  "candidate_source_file": "universe_candidates.csv",
+  "selected_universe_file": "universe_selected.csv",
+  "data_source": "AKShare Sina daily raw and retrospective qfq; third-party redistribution permission not established",
+  "data_start_for_lookback": "2014-01-01",
+  "formation_start": "2015-01-01",
+  "data_end": "2026-10-23",
+  "factors": {
+    "momentum": "P[t-21]/P[t-252]-1",
+    "reversal": "-(P[t]/P[t-21]-1)"
+  },
+  "outcome": "P[t+22]/P[t+1]-1 with observed full forward path",
+  "minimum_complete_case_names": 20,
+  "hac_lags": 3,
+  "period_boundaries": {
+    "development": [
+      "2015-01-01",
+      "2022-12-31"
+    ],
+    "historical_evaluation_reused": [
+      "2023-01-01",
+      "2025-12-31"
+    ],
+    "new_historical_extension_not_prospective": [
+      "2026-01-01",
+      "2026-10-23"
+    ]
+  },
+  "not_point_in_time_universe": true,
+  "risks": [
+    "Current-listed candidate pool still excludes companies delisted before candidate collection.",
+    "Stratification removes code-order concentration only, not survivorship or historical market representation.",
+    "2023-2025 already inspected; no untouched time-based OOS period.",
+    "Retrospective QFQ and price-only forward outcomes; not investable returns.",
+    "2026 extension is historical and may be incomplete; not prospective validation."
+  ]
+}
