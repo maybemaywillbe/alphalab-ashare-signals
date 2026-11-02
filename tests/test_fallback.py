@@ -1,7 +1,7 @@
 import pandas as pd
 from alphalab import collect as c
 from alphalab import provider
-from test_v06 import master, bars
+from test_collection_audit import master, bars
 
 def test_fallback_and_cache(tmp_path,monkeypatch):
     p=master(tmp_path); snap=tmp_path/'snap'; calls=[]

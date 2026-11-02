@@ -223,7 +223,7 @@ def run(snapshots: str, output: str = "outputs/final", retrieval_date: str | Non
     pa = pa.merge(ic[["date", "factor"]].assign(ic_descriptive_eligible=True),
                   on=["date", "factor"], how="left")
     pa["ic_descriptive_eligible"] = pa.ic_descriptive_eligible.eq(True)
-    # Freeze exact, unambiguous public-facing names; keep legacy files in subdirectories for comparison.
+    # Write standardized summary filenames while retaining detailed analyses in subdirectories.
     pa.to_csv(out / "group_policy_comparison.csv", index=False)
     funnel.to_csv(out / "factor_month_eligibility_funnel.csv", index=False)
     relabel_period(ic).rename(columns={"n": "outcome_observed_stock_count", "rank_ic": "rank_ic_complete_case"}).to_csv(

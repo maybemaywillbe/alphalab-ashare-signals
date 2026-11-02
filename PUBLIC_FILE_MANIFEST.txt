@@ -82,4 +82,4 @@ tests/test_structural.py
 tests/test_study_plan.py
 tests/test_study_plan_code_boundaries.py
 tests/test_universe_snapshot.py
-tests/test_v06.py
+tests/test_collection_audit.py

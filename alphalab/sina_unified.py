@@ -1,6 +1,6 @@
-"""Sina-only raw + qfq daily snapshots, isolated from legacy mixed-provider cache.
+"""Collect and validate Sina raw and retrospectively adjusted QFQ daily snapshots.
 
-Current qfq is a retrospective adjustment, NOT a point-in-time historical series.
+QFQ values reflect the adjustment vintage at retrieval and are not point-in-time prices.
 """
 from __future__ import annotations
 import argparse, hashlib, json, time
